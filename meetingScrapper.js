@@ -29,6 +29,14 @@ async function fetchNparseMeetings(bbbUrl, clusterNode) {
                     Logger.info("meetingScrapper --fetchNparseMeetings = failed to Update " + err.message);
             });
 
+        }else{
+            clusterNode.currentMeetingCount = 0;
+            clusterNode.currentUserCount = 0;
+            clusterNode.save(function (err) {
+                if (err)
+                    Logger.info("meetingScrapper --fetchNparseMeetings = failed to Update " + err.message);
+            });
+
         }
 
     }
