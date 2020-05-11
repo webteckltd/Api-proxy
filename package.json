@@ -1,0 +1,24 @@
+{
+  "name": "medwhiz_proj",
+  "version": "1.0.0",
+  "description": "API wrapper",
+  "main": "ApiProxy.js",
+  "scripts": {
+    "start": "node ApiProxy.js"
+  },
+  "author": "ravindra shukla",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.3",
+    "mongoose": "^5.9.12",
+    "node-cron": "^2.0.3",
+    "uuid": "^8.0.0",
+    "validatorjs": "^3.18.1",
+    "winston": "^3.2.1",
+    "xml-js": "^1.6.11"
+  }
+}
